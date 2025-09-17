@@ -1,0 +1,145 @@
+# Kali Bitpixie Chroot Packages List
+#
+# This package list is designed to provide a minimal Kali Linux environment
+# tailored for exploiting the Bitpixie vulnerability and related 2025 BitLocker CVEs.
+# The selection emphasizes tools for memory analysis, network and system scanning,
+# firmware and flashing utilities, Windows recovery manipulation, and forensic analysis.
+#
+# The environment facilitates rapid recovery environment exploitation, memory key extraction,
+# and decryption attacks on BitLocker without requiring invasive hardware modifications.
+#
+# Future expansions will include volatility integration, cache warming for cht.sh and tealdeer,
+# and refined tooling for automated exploitation and post-exploitation workflows.
+# 
+# There are also considerations for including hardware based attacks at a later, as well as automating the Bitpixie and more complicated 2025 bitlocker CVE processes, as well as packaging in Windows PE creation tools and my own attempts at building better workflow 
+
+# Base System and Desktop
+kali-linux-core
+kali-desktop-live
+kali-desktop-xfce
+
+# Network and Reconnaissance
+nmap
+zenmap
+wireshark
+tshark
+netcat
+socat
+wireguard-tools
+ufw
+whereami
+nvidia-detect
+spiderfoot
+recon-ng
+nat-traverse
+dino-im
+tor
+nyx
+
+# Penetration Testing and Exploitation
+metasploit-framework
+msfpc
+python3-pymetasploit3
+ruby-msfpc-client
+powershell-empire
+shellter
+getsploit
+framework2
+commix
+veil
+unicorn-magic
+sploitscan
+coercer
+chainsaw
+sickle-tool
+shellfire
+wce
+peass
+msitool
+msi-keyboard
+pipebench
+cpu-x
+cpuinfo
+
+# Windows/BitLocker/Forensics/Recovery
+bitlocker-debug
+dislocker
+cryptsetup
+cryptsetup-initramfs
+systemd-cryptsetup
+aeskeyfind
+chntpw
+readpe
+recoverdm
+autopsy
+sleuthkit
+scalpel
+foremost
+photorec
+magicrescue
+myrescue
+testdisk
+partclone
+gpart
+gparted
+parted
+smartmontools
+mac-robber
+lime-forensic-dkms
+shed
+pompem
+samdump2
+creddump7
+windows-binaries
+nishang
+
+# Memory/Hardware/TPM Tools
+pcileech
+tpm2-tools
+hexcompare
+htop
+hwloc
+diffoscope
+gdb-peda
+
+# Programming/Automation
+ansible
+cdebootstrap
+debootstrap
+arch-install-scripts
+
+# OSINT/Recon/Privacy
+licenserecon
+bloodhound
+
+# Miscellaneous Utilities
+gameconqueror
+procs
+i8kutils
+nsis
+lshw
+pciutils
+usbutils
+inxi
+firmware-linux
+firmware-linux-nonfree
+firmware-misc-nonfree
+firmware-iwlwifi
+
+# Graphical & Reverse Engineering
+ghex
+hexedit
+bless
+bvi
+ghidra
+radare2
+rizin
+rizin-cutter
+
+# Additional packages recommended for Windows PE simulation, USB HID attacks,
+# network stealth, and advanced network simulation:
+ntdsutil
+imdisk
+libuseragent           # User agent spoofing tool or scriptable utility
+fonts-liberation       # Windows-like free fonts for UI believability
+fonts-wine             # Additional fonts to mimic
