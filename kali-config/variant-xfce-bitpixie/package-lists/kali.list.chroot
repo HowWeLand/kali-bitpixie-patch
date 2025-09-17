@@ -23,7 +23,7 @@ nmap
 zenmap
 wireshark
 tshark
-netcat
+netcat-traditional
 socat
 wireguard-tools
 ufw
@@ -40,7 +40,7 @@ nyx
 metasploit-framework
 msfpc
 python3-pymetasploit3
-ruby-msfpc-client
+ruby-msfrpc-client
 powershell-empire
 shellter
 getsploit
@@ -55,14 +55,13 @@ sickle-tool
 shellfire
 wce
 peass
-msitool
+msitools
 msi-keyboard
 pipebench
 cpu-x
 cpuinfo
 
 # Windows/BitLocker/Forensics/Recovery
-bitlocker-debug
 dislocker
 cryptsetup
 cryptsetup-initramfs
@@ -75,7 +74,6 @@ autopsy
 sleuthkit
 scalpel
 foremost
-photorec
 magicrescue
 myrescue
 testdisk
@@ -85,7 +83,7 @@ gparted
 parted
 smartmontools
 mac-robber
-lime-forensic-dkms
+lime-forensics-dkms
 shed
 pompem
 samdump2
@@ -94,7 +92,7 @@ windows-binaries
 nishang
 
 # Memory/Hardware/TPM Tools
-pcileech
+heartleech
 tpm2-tools
 hexcompare
 htop
@@ -129,7 +127,6 @@ firmware-iwlwifi
 # Graphical & Reverse Engineering
 ghex
 hexedit
-bless
 bvi
 ghidra
 radare2
@@ -137,9 +134,10 @@ rizin
 rizin-cutter
 
 # Additional packages recommended for Windows PE simulation, USB HID attacks,
-# network stealth, and advanced network simulation:
-ntdsutil
-imdisk
-libuseragent           # User agent spoofing tool or scriptable utility
-fonts-liberation       # Windows-like free fonts for UI believability
-fonts-wine             # Additional fonts to mimic
+# network stealth, and advanced network simulation:           
+fonts-liberation       
+fonts-wine             
+
+# Usefule web extensions
+webext-foxyproxy
+webext-ublock-origin
